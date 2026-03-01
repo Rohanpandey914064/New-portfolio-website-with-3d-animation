@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+gsap.registerPlugin(ScrollTrigger);
 
 const ShowcaseSection = () => {
 
@@ -25,7 +26,7 @@ const ShowcaseSection = () => {
             y:0, opacity: 1, duration: 1.5, delay: 0.5 * (index + 1),
             scrollTrigger: {
               trigger: card,
-              start: 'top bottom -=100'
+              start: 'top bottom-=100'
             }
           }
         )
