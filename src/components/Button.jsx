@@ -17,7 +17,7 @@ const Button = ({text,className,id}) => {
         })
       }
     }}
-    className={`${className ?? ''}cta-wrapper`}>
+    className={`${className ?? ''} cta-wrapper`}>
         <div className="cta-button group">
             <div className="bg-circle"/>
                 <p className="text">{text}</p>

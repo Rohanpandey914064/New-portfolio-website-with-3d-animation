@@ -32,15 +32,15 @@ const Hero = () => {
 
         <div className='relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-center'>
         {/* Left: Hero content */}
-        <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5">
-            <div className='flex flex-col gap-7'>
+        <header className="flex flex-col justify-center md:w-full w-full md:px-20 px-5">
+            <div className='flex flex-col gap-7 '>
                 <div className='hero-text'>
                     <h1>
                         Shaping
                         <span className='slide'>
                             <span className='wrapper'>
                             {words.map((word) => (
-                                <span key={word.text} className='flex item-center md:gap-3 gap-1 pd-2'>
+                                <span key={word.text} className='flex items-center md:gap-3 gap-1 p-2'>
                                     <img 
                                     src={word.imgPath}
                                     alt={word.text}
@@ -55,7 +55,7 @@ const Hero = () => {
                     <h1>into Real Projects</h1>
                     <h1>that Deliver Results</h1>
                 </div>
-                <p className='text-white-50 md:text-xl relative z-10 pointer-events-none'>
+                <p className='text-white-50 md:text-xl relative z-10 pointer-events-none max-w-xl'>
                     Hi, I'm Rohan — a full stack developer based in India with a passion for building impactful products.
                 </p>
 
