@@ -11,10 +11,10 @@ const navLinks = [
     name: "Skills",
     link: "#skills",
   },
-  {
-    name: "Testimonials",
-    link: "#testimonials",
-  },
+  // {
+  //   name: "Testimonials",
+  //   link: "#testimonials",
+  // },
 ];
 
 const words = [
@@ -29,10 +29,10 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 650, suffix: "+", label: "Coding Hours" },
+  { value: 12, suffix: "+", label: "Technologies Learned" },
+  { value: 9, suffix: "+", label: "Projects Built" },
+  { value: 13, suffix: "+", label: "GitHub Repositories" },
 ];
 
 const logoIconsList = [
@@ -147,39 +147,41 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
+    review: "Rohan has been focusing on frontend development using modern frameworks and building responsive user interfaces with clean design.",
+    imgPath: "/images/client1.png",
     logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    title: "Frontend Development (React / Next.js)",
+    date: "2024 – Present",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Developing responsive interfaces using React and Next.js.",
+      "Learning component-based architecture and modern UI practices.",
+      "Integrating APIs to build dynamic web applications.",
+      "Improving user experience and performance."
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
+    review: "Rohan is a passionate developer who is constantly learning and experimenting with modern web technologies. His curiosity and dedication help him improve every day.",
+    imgPath: "/images/client2.png",
     logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    title: "Full Stack Developer (Learning Journey)",
+    date: "2025 – Present",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Learning full stack development step by step.",
+      "Building projects to understand real-world web applications.",
+      "Practicing problem solving and improving coding skills.",
+      "Exploring new technologies and frameworks."
     ],
   },
   {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
+    review: "Rohan worked on several small applications and coding projects to strengthen his understanding of data structures and full-stack development.",
+    imgPath: "/images/client3.png",
     logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    title: "Learning & Development Projects",
+    date: "2024 – Present",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Practicing Data Structures and Algorithms in Java.",
+      "Building small web apps to improve full-stack development skills",
+      "Learning modern tools like React, APIs, and backend development.",
     ],
   },
 ];
@@ -246,20 +248,14 @@ const testimonials = [
 
 const socialImgs = [
   {
-    name: "insta",
-    imgPath: "/images/insta.png",
-  },
-  {
-    name: "fb",
-    imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
+    name: "github",
+    imgPath: "/images/github.png",
+    url:"https://github.com/Rohanpandey914064"
   },
   {
     name: "linkedin",
     imgPath: "/images/linkedin.png",
+    url:"https://www.linkedin.com/in/rohan-pandey-770768328"
   },
 ];
 

@@ -62,10 +62,10 @@ const ShowcaseSection = () => {
             {/* Text */}
             <div className="space-y-5 mt-5">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
-                On-Demand Ridex Made Simple with a Powerful, User-Friendly App called Ryde
+                Flavor Discovery Made Simple with a Powerful, User-Friendly Platform called ByteBite
               </h2>
               <p className="text-white/50 md:text-xl">
-                Ryde is a cutting-edge on-demand ride-hailing app that revolutionizes urban transportation.
+                ByteBite is a cutting-edge flavor science platform that helps chefs and food innovators discover unique ingredient pairings using molecular gastronomy data. By analyzing ingredients at the chemical compound level with FlavorDB and FoodOScope, it reveals scientifically backed flavor combinations and provides real-time insights for creating innovative recipes.
               </p>
             </div>
 
@@ -74,21 +74,21 @@ const ShowcaseSection = () => {
             {/* RIGHT PROJECT 1 */}
             <div className="flex flex-col gap-3" ref={project2Ref}>
               <div className="w-full rounded-xl overflow-hidden bg-[#ffefdb] p-2 h-[250px]">
-                <img src="/images/project2.png" alt="Library Management Platform" className="w-full h-full object-contain"/>
+                <img src="/images/project2.png" alt="Resume Analysis Agent" className="w-full h-full object-contain"/>
               </div>
               <h2 className="text-xl font-semibold">
-                Library Management Platform
+                Smart Resume Analysis Made Simple with an AI-Powered App
               </h2>
             </div>
           
 
           {/* RIGHT PROJECT 2 */}
             <div className="flex flex-col gap-3" ref={project3Ref}>
-              <div className="w-full rounded-xl overflow-hidden bg-[#ffe7eb] p-2 h-[250px]">
-                <img src="/images/project3.png" alt="Yc" className="w-full h-full object-contain"/>
+              <div className="w-full rounded-xl overflow-hidden p-2 h-[250px]">
+                <img src="/images/project3.png" alt="Note Yes" className="w-full h-full object-contain"/>
               </div>
               <h2 className="text-xl font-semibold">
-                Yc Directory - A Startup Showcase App
+                Simple Note Management Made Easy with a Smart Note-Taking App
               </h2>
             </div>
         </div>

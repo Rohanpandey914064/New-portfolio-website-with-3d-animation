@@ -56,7 +56,7 @@ const ExperienceSection = () => {
     <section id='experience' className='w-full md:mt-40 mt-20 section-padding xl:px-0'>
         <div className='w-full h-full md:px-20 px-5'>
             <TitleHeader 
-            title = 'Professional Work Experience'
+            title = 'Projects & Development Experience'
              sub='My Career Overview'
             />
           <div className='mt-32 relative'>
@@ -80,7 +80,7 @@ const ExperienceSection = () => {
 
                       <div className='expText flex xl:gap-20 md:gap-10 gap-5 relative z-20'>
                         <div className='timeline-logo'>
-                          <img src={card.logoPath} alt="logo" />
+                          <img src={card.logoPath} alt="logo" overflow-hidden/>
                         </div>
                         <div>
                           <h1 className='font-semibold text-3xl'>{card.title}</h1>
