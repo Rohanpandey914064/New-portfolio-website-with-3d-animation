@@ -1,2 +1,2 @@
-name rohan 0andey
+name rohan Pandey
 resume also present 
