@@ -29,10 +29,10 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 650, suffix: "+", label: "Coding Hours" },
-  { value: 12, suffix: "+", label: "Technologies Learned" },
-  { value: 9, suffix: "+", label: "Projects Built" },
-  { value: 13, suffix: "+", label: "GitHub Repositories" },
+  { value: 1342, suffix: "+", label: "Coding Hours" },
+  { value: 24, suffix: "+", label: "Technologies Learned" },
+  { value: 19, suffix: "+", label: "Projects Built" },
+  { value: 31, suffix: "+", label: "GitHub Repositories" },
 ];
 
 const logoIconsList = [
@@ -94,10 +94,10 @@ const techStackImgs = [
     name: "React Developer",
     imgPath: "/images/logos/react.png",
   },
-  {
-    name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
-  },
+  // {
+  //   name: "Python Developer",
+  //   imgPath: "/images/logos/python.svg",
+  // },
   {
     name: "Backend Developer",
     imgPath: "/images/logos/node.png",

@@ -9,10 +9,14 @@ import Particles from './Particles'
 const HeroExperience = () => {
     const isTablet = useMediaQuery({ query: '(max-width: 1024px)' });
     const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+    const dpr = typeof window !== 'undefined' ? Math.min(window.devicePixelRatio || 1, 1.6) : 1;
 
   return (
-    <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
-        
+    <Canvas
+      camera={{ position: [0, 0, 15], fov: 45 }}
+      dpr={dpr}
+      gl={{ antialias: false, alpha: true, powerPreference: 'low-power' }}
+    >
         <OrbitControls
             enablePan={false}
             enableZoom={!isTablet}
@@ -24,12 +28,12 @@ const HeroExperience = () => {
 
         <HeroLights />
 
-        <Particles count={isMobile ? 100 : 200} />
+        <Particles count={isMobile ? 60 : 120} />
 
         <group
-            scale={isMobile? 0.7:1}
-            position={[0, -3.5,0]}
-            rotation={[0, -Math.PI / 4 , 0]}
+            scale={isMobile ? 0.7 : 1}
+            position={[0, -3.5, 0]}
+            rotation={[0, -Math.PI / 4, 0]}
         >
             <Room />
         </group>

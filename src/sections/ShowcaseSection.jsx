@@ -51,10 +51,12 @@ const ShowcaseSection = () => {
           <div className="h-full flex flex-col justify-between xl:w-[60%]" ref={project1Ref}>
             
             {/* Image */}
-            <div className="xl:h-[70vh] md:h-[50vh] h-96 relative">
+            <div className="xl:h-[75vh] md:h-[50vh] h-96 relative">
               <img
                 src="/images/project1.png"
                 alt="Ryde"
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover rounded-xl absolute inset-0"
               />
             </div>
@@ -62,10 +64,10 @@ const ShowcaseSection = () => {
             {/* Text */}
             <div className="space-y-5 mt-5">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
-                Flavor Discovery Made Simple with a Powerful, User-Friendly Platform called ByteBite
+                Building Smarter Cities with an Intelligent, AI-Powered Civic Engagement Platform
               </h2>
               <p className="text-white/50 md:text-xl">
-                ByteBite is a cutting-edge flavor science platform that helps chefs and food innovators discover unique ingredient pairings using molecular gastronomy data. By analyzing ingredients at the chemical compound level with FlavorDB and FoodOScope, it reveals scientifically backed flavor combinations and provides real-time insights for creating innovative recipes.
+                CitySpark is an AI-powered digital twin platform designed to transform the way citizens interact with municipal services. It enables users to report civic issues, explore government schemes, communicate with an AI assistant, and monitor issue resolution through live dashboards and interactive maps. With features such as AI-driven priority scoring, predictive maintenance, multilingual support across nine Indian languages, and transparent analytics, CitySpark helps governments deliver faster, smarter, and more efficient public services while fostering stronger community engagement.
               </p>
             </div>
 
@@ -74,10 +76,10 @@ const ShowcaseSection = () => {
             {/* RIGHT PROJECT 1 */}
             <div className="flex flex-col gap-3" ref={project2Ref}>
               <div className="w-full rounded-xl overflow-hidden bg-[#ffefdb] p-2 h-[250px]">
-                <img src="/images/project2.png" alt="Resume Analysis Agent" className="w-full h-full object-contain"/>
+                <img src="/images/project2.png" alt="Resume Analysis Agent" loading="lazy" decoding="async" className="w-full h-full object-contain"/>
               </div>
               <h2 className="text-xl font-semibold">
-                Smart Resume Analysis Made Simple with an AI-Powered App
+                Fast & Secure File Conversion Made Simple with a Modern SaaS Platform
               </h2>
             </div>
           
@@ -85,10 +87,10 @@ const ShowcaseSection = () => {
           {/* RIGHT PROJECT 2 */}
             <div className="flex flex-col gap-3" ref={project3Ref}>
               <div className="w-full rounded-xl overflow-hidden p-2 h-[250px]">
-                <img src="/images/project3.png" alt="Note Yes" className="w-full h-full object-contain"/>
+                <img src="/images/project3.png" alt="Note Yes" loading="lazy" decoding="async" className="w-full h-full object-contain"/>
               </div>
               <h2 className="text-xl font-semibold">
-                Simple Note Management Made Easy with a Smart Note-Taking App
+                Flavor Discovery Made Simple with a Molecular Gastronomy Platform Called ByteBite
               </h2>
             </div>
         </div>
