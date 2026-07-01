@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import TitleHeader from '../components/TitleHeader'
 import ContactExperience from '../components/ContactExperience';
+import Lazy3D from '../components/Lazy3D'
 import emailjs from '@emailjs/browser'
 
 const Contact = () => {
@@ -106,7 +107,9 @@ const Contact = () => {
                 {/* 3D Experience - Right Side */}
                 <div className='xl:col-span-7 min-h-96'>
                     <div className='w-full h-full bg-[#cd7c2e] hover:cursor-grab rounded-3xl overflow-hidden'>
-                        <ContactExperience />
+                        <Lazy3D fallback={<div className='h-[420px] w-full bg-[#cd7c2e]' />} className='h-full w-full'>
+                            <ContactExperience />
+                        </Lazy3D>
                     </div>
                 </div>
             </div>

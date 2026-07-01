@@ -1,6 +1,7 @@
 
 import { useGSAP } from "@gsap/react"
 import TechIcon from "../components/Models/TechLogos/TechIcon"
+import Lazy3D from "../components/Lazy3D"
 import TitleHeader from "../components/TitleHeader"
 import { techStackIcons,techStackImgs } from "../constants"
 import gsap from "gsap"
@@ -29,12 +30,14 @@ const TechStack = () => {
             />
 
             <div className="tech-grid">
-                {techStackIcons.map((icon) =>(
+                {/* {techStackIcons.map((icon) =>(
                     <div key={icon.name} className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg">
                         <div className="tech-card-animated-bg" />
                             <div className="tech-card-content">
                                 <div className="tech-icon-wrapper">
-                                    <TechIcon model={icon} />
+                                    <Lazy3D fallback={<div className="h-24 w-24 rounded-full bg-white/10" />} className="h-full w-full">
+                                        <TechIcon model={icon} />
+                                    </Lazy3D>
                                 </div>
 
                                 <div className="padding-x w-full">
@@ -42,10 +45,10 @@ const TechStack = () => {
                                 </div>
                             </div>
                     </div>
-                ))}
+                ))} */}
 
                 {/* if i use image in place of 3d model so at that case we use this code snippet */}
-                {/* {techStackImgs.map((icon) => (
+                {techStackImgs.map((icon) => (
                     <div key={icon.name} className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg">
                         <div className="tech-card-animated-bg" />
                             <div className="tech-card-content">
@@ -58,7 +61,7 @@ const TechStack = () => {
                                 </div>
                             </div>
                     </div>
-                ))} */}
+                ))}
             </div>
         </div>
     </div>
