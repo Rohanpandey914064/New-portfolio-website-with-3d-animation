@@ -1,4 +1,5 @@
 import React from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import Hero from './sections/Hero'
 import ShowcaseSection from './sections/ShowcaseSection'
 import NavBar from './components/NavBar'
@@ -23,6 +24,7 @@ const App = () => {
       {/* <Testimonials /> */}
       <Contact />
       <Footer />
+      <Analytics />
     </>
   )
 }
