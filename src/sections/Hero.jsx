@@ -1,10 +1,11 @@
-import React, { use } from 'react'
+import React, { lazy, Suspense } from 'react'
 import { words } from '../constants'
 import Button from '../components/Button'
-import HeroExperience from '../components/HeroModels/HeroExperience'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import AnimatedCounter from '../components/AnimatedCounter'
+
+const HeroExperience = lazy(() => import('../components/HeroModels/HeroExperience'))
 
 const Hero = () => {
 
@@ -56,7 +57,7 @@ const Hero = () => {
                     <h1>that Deliver Results</h1>
                 </div>
                 <p className='text-white-50 md:text-xl relative z-10 pointer-events-none max-w-xl'>
-                    Hi, I'm Rohan — a full stack developer based in India with a passion for building impactful products.
+                    Hi, I'm Rohan Pandey — a Backend & Full-Stack Developer building scalable APIs, microservices, and production web apps.
                 </p>
 
                 <Button 
@@ -71,7 +72,9 @@ const Hero = () => {
 
         <figure>
             <div className='hero-3d-layout'>
-                <HeroExperience />
+                <Suspense fallback={null}>
+                    <HeroExperience />
+                </Suspense>
             </div>
         </figure>
         </div>

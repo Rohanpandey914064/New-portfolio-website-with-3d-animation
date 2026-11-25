@@ -47,53 +47,53 @@ const ShowcaseSection = () => {
       <div className="w-full">
         <div className="flex xl:flex-row flex-col gap-10 justify-between">
           
-          {/* LEFT */}
+          {/* LEFT - MAIN PROJECT: CODINGX */}
           <div className="h-full flex flex-col justify-between xl:w-[60%]" ref={project1Ref}>
             
             {/* Image */}
-            <div className="xl:h-[75vh] md:h-[50vh] h-96 relative">
+            <div className="xl:h-[75vh] md:h-[50vh] h-96 relative rounded-xl overflow-hidden border border-white/10">
               <img
-                src="/images/project1.png"
-                alt="Ryde"
+                src="/images/codingx.jpg"
+                alt="CodingX - DSA Learning & Contest Platform"
                 loading="lazy"
                 decoding="async"
-                className="w-full h-full object-cover rounded-xl absolute inset-0"
+                className="w-full h-full object-cover object-top rounded-xl absolute inset-0"
               />
             </div>
 
             {/* Text */}
             <div className="space-y-5 mt-5">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
-                Building Smarter Cities with an Intelligent, AI-Powered Civic Engagement Platform
+                CodingX — Production DSA Learning & Contest Platform
               </h2>
               <p className="text-white/50 md:text-xl">
-                CitySpark is an AI-powered digital twin platform designed to transform the way citizens interact with municipal services. It enables users to report civic issues, explore government schemes, communicate with an AI assistant, and monitor issue resolution through live dashboards and interactive maps. With features such as AI-driven priority scoring, predictive maintenance, multilingual support across nine Indian languages, and transparent analytics, CitySpark helps governments deliver faster, smarter, and more efficient public services while fostering stronger community engagement.
+                Engineered end-to-end as a solo full-stack developer across React 18 (23-page SPA), Node.js & Express.js (84 REST endpoints, 32-model PostgreSQL schema with Prisma), and a standalone Docker-isolated code-execution microservice for Java, C++, Python, and JavaScript. Features deterministic ICPC-style contest scoring, PostgreSQL advisory locks, an AST-based plagiarism engine, Redis, Nginx, Render IaC, 63 automated tests, and k6 load testing for 5,000–8,000 concurrent users at codingx007.in.
               </p>
             </div>
 
           </div>
           <div className="flex flex-col gap-5 xl:w-[40%] xl:h-[70vh]">
-            {/* RIGHT PROJECT 1 */}
+            {/* RIGHT PROJECT 1: BHARAT SEVA FOUNDATION */}
             <div className="flex flex-col gap-3" ref={project2Ref}>
-              <div className="w-full rounded-xl overflow-hidden bg-[#ffefdb] p-2 h-[250px]">
-                <img src="/images/project2.png" alt="Resume Analysis Agent" loading="lazy" decoding="async" className="w-full h-full object-contain"/>
+              <div className="w-full rounded-xl overflow-hidden border border-white/10 h-[250px]">
+                <img src="/images/bsf.jpg" alt="Bharat Seva Foundation - National Olympiad Portal" loading="lazy" decoding="async" className="w-full h-full object-cover object-top"/>
               </div>
               <h2 className="text-xl font-semibold">
-                Fast & Secure File Conversion Made Simple with a Modern SaaS Platform
+                Bharat Seva Foundation — Scalable National Olympiad Portal with Razorpay & SOA Backend
               </h2>
             </div>
           
 
-          {/* RIGHT PROJECT 2 */}
+            {/* RIGHT PROJECT 2: CONVERTFLOW */}
             <div className="flex flex-col gap-3" ref={project3Ref}>
-              <div className="w-full rounded-xl overflow-hidden p-2 h-[250px]">
-                <img src="/images/project3.png" alt="Note Yes" loading="lazy" decoding="async" className="w-full h-full object-contain"/>
+              <div className="w-full rounded-xl overflow-hidden border border-white/10 h-[250px]">
+                <img src="/images/convertflow.png" alt="ConvertFlow - Universal File Converter" loading="lazy" decoding="async" className="w-full h-full object-cover object-top"/>
               </div>
               <h2 className="text-xl font-semibold">
-                Flavor Discovery Made Simple with a Molecular Gastronomy Platform Called ByteBite
+                ConvertFlow — Async Universal File Converter Powered by Next.js, BullMQ & Redis
               </h2>
             </div>
-        </div>
+          </div>
           
         </div>
       </div>

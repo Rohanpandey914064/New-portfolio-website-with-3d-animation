@@ -1,4 +1,4 @@
-import React, { use } from 'react'
+import React from 'react'
 import { expCards } from '../constants/index.js'
 import TitleHeader from '../components/TitleHeader'
 import GlowCard from '../components/GlowCard.jsx'
@@ -15,7 +15,7 @@ const ExperienceSection = () => {
         xPercent: -100,
         opacity: 0,
         transformOrigin: 'left left',
-        duration:1,
+        duration: 1,
         ease: 'power2.inOut',
         scrollTrigger: {
           trigger: card,
@@ -24,18 +24,15 @@ const ExperienceSection = () => {
       })
     })
 
-    gsap.to('.timeline',{
+    gsap.to('.timeline', {
+      scaleY: 0,
       transformOrigin: 'bottom bottom',
-      ease: 'power1.inOut',
+      ease: 'none',
       scrollTrigger: {
         trigger: '.timeline',
         start: 'top center',
         end: '70% center',
-        onUpdate: (self) => {
-          gsap.to('.timeline', {
-            scaleY: 1- self.progress,
-          })
-        }
+        scrub: true,
       },
     })
 
@@ -66,7 +63,7 @@ const ExperienceSection = () => {
                   <div className='xl:w-2/6'>
                     <GlowCard card={card}>
                       <div>
-                        <img src={card.imgPath} alt={card.title} />
+                        <img src={card.imgPath} alt={card.title} loading='lazy' decoding='async' className='rounded-lg w-full object-cover' />
                       </div>
                     </GlowCard>
                   </div>
@@ -80,7 +77,7 @@ const ExperienceSection = () => {
 
                       <div className='expText flex xl:gap-20 md:gap-10 gap-5 relative z-20'>
                         <div className='timeline-logo'>
-                          <img src={card.logoPath} alt="logo" overflow-hidden/>
+                          <img src={card.logoPath} alt="logo" loading='lazy' decoding='async' />
                         </div>
                         <div>
                           <h1 className='font-semibold text-3xl'>{card.title}</h1>

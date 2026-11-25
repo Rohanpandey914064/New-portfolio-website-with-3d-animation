@@ -1,29 +1,28 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
 import { Analytics } from '@vercel/analytics/react'
 import Hero from './sections/Hero'
-import ShowcaseSection from './sections/ShowcaseSection'
 import NavBar from './components/NavBar'
-import LogoSection from './components/LogoSection'
-import FeatureCards from './sections/FeatureCards'
-import ExperienceSection from './sections/ExperienceSection'
-import TechStack from './sections/TechStack'
-import Testimonials from './sections/Testimonials'
-import Contact from './sections/Contact'
-import Footer from './sections/Footer'
+
+const ShowcaseSection = lazy(() => import('./sections/ShowcaseSection'))
+const FeatureCards = lazy(() => import('./sections/FeatureCards'))
+const ExperienceSection = lazy(() => import('./sections/ExperienceSection'))
+const TechStack = lazy(() => import('./sections/TechStack'))
+const Contact = lazy(() => import('./sections/Contact'))
+const Footer = lazy(() => import('./sections/Footer'))
 
 const App = () => {
   return (
     <>
       <NavBar />
       <Hero />
-      <ShowcaseSection />
-      {/* <LogoSection /> */}
-      <FeatureCards />
-      <ExperienceSection />
-      <TechStack />
-      {/* <Testimonials /> */}
-      <Contact />
-      <Footer />
+      <Suspense fallback={null}>
+        <ShowcaseSection />
+        <FeatureCards />
+        <ExperienceSection />
+        <TechStack />
+        <Contact />
+        <Footer />
+      </Suspense>
       <Analytics />
     </>
   )

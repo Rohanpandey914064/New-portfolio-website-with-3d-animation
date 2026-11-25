@@ -29,10 +29,10 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 1342, suffix: "+", label: "Coding Hours" },
-  { value: 24, suffix: "+", label: "Technologies Learned" },
-  { value: 19, suffix: "+", label: "Projects Built" },
-  { value: 31, suffix: "+", label: "GitHub Repositories" },
+  { value: 350, suffix: "+", label: "DSA Problems Solved" },
+  { value: 84, suffix: "+", label: "REST API Endpoints" },
+  { value: 63, suffix: "+", label: "Automated Tests" },
+  { value: 100, suffix: "K+", label: "Members Scaled (BSF)" },
 ];
 
 const logoIconsList = [
@@ -147,41 +147,41 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Rohan has been focusing on frontend development using modern frameworks and building responsive user interfaces with clean design.",
-    imgPath: "/images/client1.png",
+    review: "Software Development Intern (Backend & Full-Stack) at Bharat Seva Foundation — building high-throughput SOA REST APIs, Razorpay payment pipelines, and scalable MongoDB architectures.",
+    imgPath: "/images/bsf.jpg",
     logoPath: "/images/logo1.png",
-    title: "Frontend Development (React / Next.js)",
-    date: "2024 – Present",
+    title: "Software Development Intern | Bharat Seva Foundation (BSF India)",
+    date: "Jun 2026 – Present",
     responsibilities: [
-      "Developing responsive interfaces using React and Next.js.",
-      "Learning component-based architecture and modern UI practices.",
-      "Integrating APIs to build dynamic web applications.",
-      "Improving user experience and performance."
+      "Developed service-oriented (SOA) REST Web Services with Node.js, Express.js, and MongoDB Atlas for a National Olympiad registration and admin portal, keeping query latency under 5ms via compound indexes (benchmarked for 100,000+ members).",
+      "Integrated Razorpay payments with signature verification, automated digital ID card and receipt generation, and Cloudinary CDN for zero-footprint media storage.",
+      "Secured REST APIs with JWT authentication, Helmet, CORS whitelisting, and rate limiting.",
+      "Proposed a Redis caching and database sharding roadmap to scale the portal to 1,000,000+ members."
     ],
   },
   {
-    review: "Rohan is a passionate developer who is constantly learning and experimenting with modern web technologies. His curiosity and dedication help him improve every day.",
-    imgPath: "/images/client2.png",
+    review: "Owned CodingX end to end as a solo full-stack & DevOps engineer — shipping a production DSA & contest platform tested at 5,000–8,000 concurrent users.",
+    imgPath: "/images/codingx.jpg",
     logoPath: "/images/logo2.png",
-    title: "Full Stack Developer (Learning Journey)",
-    date: "2025 – Present",
+    title: "Solo Full-Stack & DevOps Engineer | CodingX (codingx007.in)",
+    date: "Jun 2026 – Present",
     responsibilities: [
-      "Learning full stack development step by step.",
-      "Building projects to understand real-world web applications.",
-      "Practicing problem solving and improving coding skills.",
-      "Exploring new technologies and frameworks."
+      "Shipped a 23-page React 18 SPA (40 reusable components, 6 custom hooks) and an N-tier Node.js/Express backend with 84 REST endpoints and a 32-model PostgreSQL schema via Prisma (7 migrations).",
+      "Engineered a standalone Docker-isolated code-execution microservice (Java, C++, Python, JS) with non-root runners, dropped Linux capabilities, 5s timeouts, Piston fallback, and a bounded queue.",
+      "Implemented deterministic ICPC-style contest scoring, PostgreSQL advisory locks against race conditions, and an AST-based plagiarism engine secured with JWT, Google OAuth, bcrypt, and Helmet.",
+      "Validated with 63 unit/integration tests (Node.js test runner), k6 load testing, Nginx, Render IaC, and Git-push CI/CD auto-deploys."
     ],
   },
   {
-    review: "Rohan worked on several small applications and coding projects to strengthen his understanding of data structures and full-stack development.",
-    imgPath: "/images/client3.png",
+    review: "Built ConvertFlow with async BullMQ/Redis job pipelines while maintaining an 8.41/10 CGPA in B.Tech CS at KIET, Ghaziabad and earning AWS Cloud Practitioner.",
+    imgPath: "/images/convertflow.png",
     logoPath: "/images/logo3.png",
-    title: "Learning & Development Projects",
-    date: "2024 – Present",
+    title: "Full-Stack Developer | ConvertFlow & B.Tech CS (KIET)",
+    date: "Aug 2024 – Present",
     responsibilities: [
-      "Practicing Data Structures and Algorithms in Java.",
-      "Building small web apps to improve full-stack development skills",
-      "Learning modern tools like React, APIs, and backend development.",
+      "Architected ConvertFlow (Next.js 14, Node.js, Express.js, BullMQ, Redis) with an asynchronous job pipeline and 7 dedicated conversion engines (Sharp, pdf-lib, Mammoth, SheetJS, json2csv) across PDF, DOCX, image, and spreadsheet formats.",
+      "Automated temporary file purging every 30 minutes via cron jobs and hardened uploads with Helmet, Express Rate Limit, and Multer.",
+      "Solved 350+ Data Structures & Algorithms problems on LeetCode in Java and earned AWS Certified Cloud Practitioner (2026)."
     ],
   },
 ];
